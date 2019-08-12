@@ -1,3 +1,3 @@
 # SmartMarket-MobileApp
 
-  ![Test Image 1]("master/img/SS1.png")
+  ![Test Image 1]("/SS1.png")
