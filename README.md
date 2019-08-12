@@ -1,3 +1,3 @@
 # SmartMarket-MobileApp
 
-    ![](https://github.com/KonigMachine/SmartMarket-MobileApp/blob/master/SS1.jpg | width=100)
+    ![](https://github.com/KonigMachine/SmartMarket-MobileApp/blob/master/SS1.jpg)
