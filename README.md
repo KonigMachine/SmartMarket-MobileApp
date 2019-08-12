@@ -1,4 +1,5 @@
 # SmartMarket-MobileApp
 
-  img[alt=drawing] {width=120px, height= 70px}
-  ![SS1.jpg]
+  <div style="width:50%">
+    ![drawing](https://github.com/KonigMachine/SmartMarket-MobileApp/blob/master/SS1.jpg)
+  <div>
