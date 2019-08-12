@@ -1,5 +1,8 @@
 # SmartMarket-MobileApp
 
-  <div style="width:50%">
-    ![drawing](https://github.com/KonigMachine/SmartMarket-MobileApp/blob/master/SS1.jpg)
-  <div>
+img[alt$="-pics"]{
+  width:  40%;
+  width: 120px
+}
+
+    ![drawing -fullwidth](https://github.com/KonigMachine/SmartMarket-MobileApp/blob/master/SS1.jpg)
