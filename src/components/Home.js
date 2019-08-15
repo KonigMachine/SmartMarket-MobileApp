@@ -101,16 +101,16 @@ class Home extends Component {
             message: [0,0,0,0,0,0,0,0,0,0,0,0,0,0],
             counter: 0,
             data: [ 50, 10, 40, 95, -4, -24, 85, 91, 35, 53, -53, 24, 50, -20, -80 ],
-            fetchArrLength : 0,
+            CurrentValue : 0,
         }
     }
 
     getMoviesFromApi = () => {
         try {
             var arr=[]
-            fetch('https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=AMZN&interval=5min&apikey=XXS6ODX9W4XTJSSW').then((response) => response.json()).then((responseJson) => {
-            this.setState({fetchArrLength: responseJson.length});        
-                
+            fetch('http://192.168.1.6:5000/').then((response) => response.json()).then((responseJson) => {//fetch('https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=AMZN&interval=5min&apikey=XXS6ODX9W4XTJSSW').then((response) => response.json()).then((responseJson) => {
+            this.setState({CurrentValue: responseJson.CurrentValue});
+
             /*   
                 for(i=0; i <  responseJson["Time Series (5min)"].length; i++){
                     arr[i] = responseJson.movies.id[i];
@@ -219,7 +219,7 @@ class Home extends Component {
                         }
                 </View> : 
                 <View style={outterWindow.outter}>
-                        <Text style={{marginLeft: 20, marginTop: 25, fontSize: 16, fontWeight: "bold"}}> Amazon (AMZN) : {this.state.message[13]}</Text>
+                        <Text style={{marginLeft: 20, marginTop: 25, fontSize: 16, fontWeight: "bold"}}> Amazon (AMZN) : {this.state.CurrentValue}</Text>
                         <View style={{marginLeft: 40, marginTop: 100}}>
                             <Text> Graph 1 </Text>
                             <View style={{flexDirection: 'row' }}>
@@ -239,7 +239,7 @@ class Home extends Component {
                                 numberOfTicks={10}
                                 formatLabel={(value) => `${value}ºC`}/>
                             </View>
-                            <Text> fetchArrLength :  {this.state.fetchArrLength} </Text>
+                            <Text> fetchArrLength :  {this.state.CurrentValue} </Text>
                             <BarChart style={ { height: 200, width:250 } }
                             formatLabel={(value, index) => index}
                             contentInset={{ left: 10, right: 10 }}
