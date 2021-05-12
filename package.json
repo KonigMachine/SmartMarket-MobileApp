@@ -8,7 +8,7 @@
     "eject": "expo eject"
   },
   "dependencies": {
-    "chart.js": "^2.8.0",
+    "chart.js": "^2.9.4",
     "expo": "^33.0.0",
     "react": "16.8.3",
     "react-chartjs-2": "^2.7.6",
